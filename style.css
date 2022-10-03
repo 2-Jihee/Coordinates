@@ -2,6 +2,9 @@ html {
     cursor: none;
 }
 body {
+    height: 500vh;
+    margin: 0;
+    overflow: auto;
     background-color: black;
 }
 .circleCurser {
@@ -21,4 +24,18 @@ body {
     left: 0;
     top: 0;
     color: aliceblue;
+}
+.lineHorizontal {
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    background: aliceblue;
+}
+.lineVertical {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: aliceblue;
 }

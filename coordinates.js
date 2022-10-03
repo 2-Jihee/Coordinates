@@ -1,5 +1,7 @@
 const circleCurser = document.querySelector('.circleCurser');
 const mouseFollower = document.querySelector('.mouseFollower');
+const lineHorizontal = document.querySelector('.lineHorizontal')
+const lineVertical = document.querySelector('.lineVertical')
 
 addEventListener('mousemove', (event) => {
     // 마우스커서 좌표값
@@ -19,4 +21,7 @@ addEventListener('mousemove', (event) => {
     mouseFollower.style.left = (x+30) + 'px';
     mouseFollower.style.top = (y+10) + 'px';
 
+    // 마우스커서를 교차하는 수평 수직선
+    lineVertical.setAttribute('style', `left: ${x}px;`);
+    lineHorizontal.setAttribute('style', `top: ${y}px;`);
 });
