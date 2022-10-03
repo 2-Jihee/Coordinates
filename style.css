@@ -1,5 +1,18 @@
+html {
+    cursor: none;
+}
 body {
     background-color: black;
+}
+.circleCurser {
+    display: none;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
 }
 .mouseFollower {
     display: none;
